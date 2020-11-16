@@ -8,7 +8,7 @@
   @for $i from 1 through 6 {
     h#{$i} {
       font-weight: 400;
-      font-family: $global-serif-font-family;
+      font-family: $global-font-family;
 
       .anchor {
         float: left;
@@ -23,6 +23,8 @@
         .icon-link {
           visibility: hidden;
           font-size: 16px;
+          // issuse #255
+          display: contents;
 
           &:before {
             vertical-align: middle;
@@ -106,7 +108,7 @@
       color: $theme-color;
       font-size: 1.1em;
       font-family: $global-serif-font-family;
-    
+
       &:hover {
         border-bottom: $post-readMore-border-bottom;
       }

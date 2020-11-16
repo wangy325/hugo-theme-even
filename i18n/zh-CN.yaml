@@ -10,10 +10,10 @@ categories:
 
 # ===== footer =====
 powered:
-  other: "由 %s 强力驱动"
+  other: "Powered by %s"
 
 theme:
-  other: "主题"
+  other: "Theme"
 
 siteUV:
   other: "本站总访客数 %s 人"
@@ -38,7 +38,7 @@ nextPost:
   other: "下一篇"
 
 toc:
-  other: "文章目录"
+  other: "目录"
 
 readMore:
   other: "阅读更多"

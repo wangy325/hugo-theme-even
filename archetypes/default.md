@@ -34,7 +34,7 @@ flowchartDiagrams:
   enable: false
   options: ""
 
-sequenceDiagrams: 
+sequenceDiagrams:
   enable: false
   options: ""
 

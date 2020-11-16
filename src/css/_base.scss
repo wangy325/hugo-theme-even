@@ -27,12 +27,13 @@ body {
 
 ::selection {
   background: $theme-color;
-  color: #fff; 
+  color: #fff;
 }
 
 // ::-webkit-scrollbar {
 //   width: 8px;
-//   height: 6px; 
+//   height: 6px;
+// 
 // }
 
 // ::-webkit-scrollbar-thumb {
@@ -60,7 +61,8 @@ a {
 @each $header, $size in $global-headings {
   #{$header} {
     font-size: $size;
-    font-family: $global-serif-font-family;
+    // header use default font
+    // font-family: $global-serif-font-family;
   }
 }
 
