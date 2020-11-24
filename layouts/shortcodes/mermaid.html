@@ -1,0 +1,32 @@
+<!--references:
+    https://odinxu.com/post/hugo-markdown-sequence-diagram
+    https://kentxxq.com/contents/%E6%8B%93%E5%B1%95hugo%E7%9A%84markdown_%E6%B5%81%E7%A8%8B%E5%9B%BEmermaid/
+-->
+
+
+<div class="mermaid" align="{{ if .Get "align" }}
+                                {{ .Get "align" }}
+                            {{ else }}
+                                center
+                            {{ end }}">
+    {{ safeHTML .Inner }}
+</div>
+
+{{ if .Get "loadMermaidJS" }}
+<!-- <script src="https://cdn.bootcdn.net/ajax/libs/mermaid/8.5.0/mermaid.core.js"></script> -->
+<script src="https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js"></script>
+{{ end }}
+
+
+<script>
+  mermaid.initialize({
+    sequence: {
+    	showSequenceNumbers: {{ if .Get "showSequenceNumbers" }}true
+        {{ else }}false{{ end }},
+    	actorMargin: {{ if .Get "actorMargin" }}{{ .Get "actorMargin" }}
+        {{ else }}50{{ end }},
+    	diagramMarginX:10,
+    	diagramMarginY:10
+    },
+  });
+</script>
